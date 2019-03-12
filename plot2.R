@@ -16,7 +16,7 @@ rm(data_full)
 
 #Changing Date format
 Datetime <- paste(as.Date(data$Date), data$Time)
-data$Datetime <- as.POSIXct(datetime)
+data$Datetime <- as.POSIXct(Datetime)
 
 #Create the plot
 plot(data$Global_active_power~data$Datetime, 

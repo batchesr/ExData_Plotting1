@@ -16,7 +16,7 @@ rm(data_full)
 
 #Changing Date format
 Datetime <- paste(as.Date(data$Date), data$Time)
-data$Datetime <- as.POSIXct(datetime)
+data$Datetime <- as.POSIXct(Datetime)
 
 #Set up for multiple plots
 par(mfrow=c(2,2), mar=c(4,4,2,1), oma=c(0,0,2,0))
